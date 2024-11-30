@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuyển Sinh - Trường Sonadezi</title>
+    <link rel="stylesheet" href="Doanthietkeweb.css">
+</head>
+<body>
+    <header>
+        <h1>Đăng ký tuyển sinh</h1>
+        <img src="logoTrS.png" alt="Logosonadezi" class="logo">
+    </header>
+    <div class="menu text-center">
+        <a href="https://sonadezi.edu.vn/tin-tuc-html0">Tin tức Sinh viên</a>
+        <a href="https://sonadezi.edu.vn/chuyen-muc-Thong-bao">Sinh viên</a>
+        <a href="https://sonadezi.edu.vn/xem-danh-muc-phong-ban-html101">Giáo viên</a>
+        <a href="https://sonadezi.edu.vn/danh-muc-phong-ban-html131">Chương trình đào tạo</a>
+        <a href="https://tuyensinh.sonadezi.edu.vn/">Trang Tuyển sinh</a>
+    </div>
+
+    <section>
+        <h2>Chào mừng đến với trang tuyển sinh trường Sonadezi</h2>
+        <form action="submit_form.php" method="POST" enctype="multipart/form-data">
+            <label for="fullname">Họ và tên:</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="dob">Ngày sinh:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Số điện thoại:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="program">Ngành học đăng ký:</label>
+            <select id="program" name="program" required>
+                <option value="CNTT">Công nghệ thông tin</option>
+                <option value="QTKD">Quản trị kinh doanh</option>
+                <option value="KE_TOAN">Kế toán</option>
+            </select>
+
+            <label for="file">Tải lên hồ sơ (PDF):</label>
+            <input type="file" id="file" name="file" accept=".pdf">
+
+            <button type="submit">Đăng ký</button>
+            <div class="buttons">
+                <a href="#">Quay lại</a>
+                <a href="https://www.sonadezi.edu.vn/">Tiếp theo</a>
+            </div>
+        </form>
+    </section>
+    <div class="footer">
+        <p>TRƯỜNG CAO ĐẲNG CÔNG NGHỆ VÀ QUẢN TRỊ SONADEZI</p>
+        <p>Địa chỉ: Số 01, Đường 6A, KCN Biên Hòa II, Đồng Nai.</p>
+        <p>Điện thoại: 0251.3994.011/012/013 | Email: info@sonadezi.edu.vn</p>
+        <p><a href="https://igc.edu.vn/policy/CSBaoMatThongTin.pdf">Chính sách bảo mật thông tin</a></p>
+
+        <div class="social-media">
+            <p>KẾT NỐI VỚI CHÚNG TÔI:</p>
+            <a href="https://www.facebook.com/truongsonadezi" target="_blank">Facebook</a>
+            <a href="https://www.youtube.com/@sonadezicollege" target="_blank">YouTube</a>
+            <a href="https://zalo.me/4329288955483380973" target="_blank">Zalo</a>
+        </div>
+        <p>© TẬP ĐOÀN GIÁO DỤC IGC</p>
+</body>
+</html>
